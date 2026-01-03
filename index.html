@@ -247,7 +247,13 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        width: 100%;
         height: 80px;
+        margin: 0 auto;
+        position: fixed;
+        padding: 0 20px;
+
+        background-color: rgba(0, 0, 0, 0.08);
       }
 
       .logo {
@@ -313,7 +319,7 @@
       /* --- HERO --- */
       .hero {
         position: relative;
-        background-image: url("assets/Cover_1.jpg");
+        background-image: url("assets/Hero_Cover.png");
         
         background-color: var(--white);
         background-size: cover;
@@ -369,7 +375,7 @@
 
 
       .hero-title {
-        font-size: 3.5rem;
+        font-size: 2.5rem;
         margin-bottom: 20px;
         color: var(--primary-green);
         line-height: 1.2;
@@ -414,11 +420,11 @@
         z-index: 2;
       }
 
-      .hero-content h1 {
+      /* .hero-content h1 {
         font-size: 3rem;
         margin-bottom: 20px;
         line-height: 1.2;
-      }
+      } */
 
       .hero-content h2 {
         font-size: 1.5rem;
@@ -799,21 +805,8 @@
   <body>
     <!-- Header -->
     <header>
-      <div class="container nav-wrapper">
+      <div class="nav-wrapper">
         <div class="logo">
-          <!-- Simple SVG Logo Placeholder -->
-          <!-- <svg
-            width="40"
-            height="40"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-          >
-            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
-          </svg> -->
           <img src="./assets/logo.jpeg" alt="" width="40" height="40">
           <div class="logo-text">
             <span class="logo-head">Bangladesh Halal Expo</span>
@@ -830,23 +823,6 @@
           <li><a href="#why-dhaka">Why Dhaka?</a></li>
           <li><a href="#contact">Contact</a></li>
           <li class="lang-toggle" aria-label="Toggle Language">
-            <!-- <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="20"
-              height="20"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            >
-              <circle cx="12" cy="12" r="10"></circle>
-              <line x1="2" y1="12" x2="22" y2="12"></line>
-              <path
-                d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"
-              ></path>
-            </svg> -->
           </li>
           <li>
             <a
@@ -862,10 +838,11 @@
 
     <!-- Hero Section -->
     <section id="home" class="hero">
+      
       <div class="container hero-content">
-        <!-- <div style="border-radius: 50%;">
+        <div style="border-radius: 50%;">
           <img src="./assets/logo.jpeg" alt="" height="150" width="150" style="border-radius: 50% 50% 0% 0%;">
-        </div> -->
+        </div>
         
         <h1 class="hero-title">
           <span class="head">Bangladesh Halal Expo</span>
