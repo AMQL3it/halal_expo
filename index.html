@@ -5,23 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="1st International Dhaka Halal Expo 2026 - The Meeting Point of the Global Halal Economy. May 28-30, 2026 at China Bangladesh Friendship Expo Center."
+      content="Bangladesh Halal Expo - 2026 - The Meeting Point of the Global Halal Economy. May 28-30, 2026 at China Bangladesh Friendship Expo Center."
     />
-    <title>1st International Dhaka Halal Expo 2026</title>
+    <title>Bangladesh Halal Expo - 2026</title>
     <style>
       /* --- RESET & VARIABLES --- */
       :root {
-        --primary-green: #064e3b; /* Deep Islamic Green */
-        --secondary-green: #10b981; /* Brighter Accent Green */
-        --gold: #d4af37; /* Premium Gold */
-        --gold-light: #f3e5ab;
-        --text-dark: #1f2937;
-        --text-light: #6b7280;
-        --white: #ffffff;
-        --bg-light: #f9fafb;
-        --font-main: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-        --card-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
-      }
+          --primary-green: #236634;    /* Main Green */
+          /* --primary-green: #0087d4; */
+          --secondary-green: #236634; /* Same green for consistency */
+          --gold: #F30000;            /* Red as accent instead of gold */
+          --gold-light: #F30000;
+
+          --text-dark: #1f2937;
+          --text-light: #6b7280;
+
+          --white: #ffffff;
+          --bg-light: #f9fafb;
+
+          --font-main: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+          --card-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+        }
 
       * {
         margin: 0;
@@ -90,13 +94,13 @@
       }
 
       .btn-primary {
-        background-color: var(--gold);
-        color: var(--primary-green);
+        background-color: var(--primary-green);
+        color: var(--white);
       }
 
       .btn-primary:hover {
-        background-color: #b5952f;
-        color: #fff;
+        background-color: var(--gold);
+        color: var(--white);
       }
 
       .btn-outline {
@@ -120,89 +124,92 @@
 
       /* --- ISLAMIC PATTERN BG --- */
       .pattern-overlay {
-        background-color: var(--primary-green);
-        background-image: radial-gradient(
+        background-color: #236634;
+        background-image:
+          radial-gradient(
             circle at 100% 150%,
-            rgba(212, 175, 55, 0.4) 24%,
-            rgba(6, 78, 59, 0.4) 25%,
-            rgba(6, 78, 59, 0.4) 28%,
-            rgba(212, 175, 55, 0.4) 29%,
-            rgba(212, 175, 55, 0.4) 36%,
-            rgba(6, 78, 59, 0.4) 36%,
-            rgba(6, 78, 59, 0.4) 40%,
+            rgba(243, 0, 0, 0.25) 24%,
+            rgba(35, 102, 52, 0.45) 25%,
+            rgba(35, 102, 52, 0.45) 28%,
+            rgba(243, 0, 0, 0.25) 29%,
+            rgba(243, 0, 0, 0.25) 36%,
+            rgba(35, 102, 52, 0.45) 36%,
+            rgba(35, 102, 52, 0.45) 40%,
             transparent 40%,
             transparent
           ),
           radial-gradient(
             circle at 0 150%,
-            rgba(212, 175, 55, 0.4) 24%,
-            rgba(6, 78, 59, 0.4) 25%,
-            rgba(6, 78, 59, 0.4) 28%,
-            rgba(212, 175, 55, 0.4) 29%,
-            rgba(212, 175, 55, 0.4) 36%,
-            rgba(6, 78, 59, 0.4) 36%,
-            rgba(6, 78, 59, 0.4) 40%,
+            rgba(243, 0, 0, 0.25) 24%,
+            rgba(35, 102, 52, 0.45) 25%,
+            rgba(35, 102, 52, 0.45) 28%,
+            rgba(243, 0, 0, 0.25) 29%,
+            rgba(243, 0, 0, 0.25) 36%,
+            rgba(35, 102, 52, 0.45) 36%,
+            rgba(35, 102, 52, 0.45) 40%,
             transparent 40%,
             transparent
           ),
           radial-gradient(
             circle at 50% 100%,
-            rgba(6, 78, 59, 0.4) 10%,
-            rgba(212, 175, 55, 0.4) 11%,
-            rgba(212, 175, 55, 0.4) 23%,
-            rgba(6, 78, 59, 0.4) 24%,
-            rgba(6, 78, 59, 0.4) 30%,
-            rgba(212, 175, 55, 0.4) 31%,
-            rgba(212, 175, 55, 0.4) 43%,
-            rgba(6, 78, 59, 0.4) 44%,
-            rgba(6, 78, 59, 0.4) 50%,
-            rgba(212, 175, 55, 0.4) 51%,
-            rgba(212, 175, 55, 0.4) 63%,
-            rgba(6, 78, 59, 0.4) 64%,
-            rgba(6, 78, 59, 0.4) 71%,
+            rgba(35, 102, 52, 0.45) 10%,
+            rgba(243, 0, 0, 0.25) 11%,
+            rgba(243, 0, 0, 0.25) 23%,
+            rgba(35, 102, 52, 0.45) 24%,
+            rgba(35, 102, 52, 0.45) 30%,
+            rgba(243, 0, 0, 0.25) 31%,
+            rgba(243, 0, 0, 0.25) 43%,
+            rgba(35, 102, 52, 0.45) 44%,
+            rgba(35, 102, 52, 0.45) 50%,
+            rgba(243, 0, 0, 0.25) 51%,
+            rgba(243, 0, 0, 0.25) 63%,
+            rgba(35, 102, 52, 0.45) 64%,
+            rgba(35, 102, 52, 0.45) 71%,
             transparent 71%,
             transparent
           ),
           radial-gradient(
             circle at 100% 50%,
-            rgba(6, 78, 59, 0.4) 5%,
-            rgba(212, 175, 55, 0.4) 6%,
-            rgba(212, 175, 55, 0.4) 15%,
-            rgba(6, 78, 59, 0.4) 16%,
-            rgba(6, 78, 59, 0.4) 20%,
-            rgba(212, 175, 55, 0.4) 21%,
-            rgba(212, 175, 55, 0.4) 30%,
-            rgba(6, 78, 59, 0.4) 31%,
-            rgba(6, 78, 59, 0.4) 35%,
-            rgba(212, 175, 55, 0.4) 36%,
-            rgba(212, 175, 55, 0.4) 45%,
-            rgba(6, 78, 59, 0.4) 46%,
-            rgba(6, 78, 59, 0.4) 49%,
+            rgba(35, 102, 52, 0.45) 5%,
+            rgba(243, 0, 0, 0.25) 6%,
+            rgba(243, 0, 0, 0.25) 15%,
+            rgba(35, 102, 52, 0.45) 16%,
+            rgba(35, 102, 52, 0.45) 20%,
+            rgba(243, 0, 0, 0.25) 21%,
+            rgba(243, 0, 0, 0.25) 30%,
+            rgba(35, 102, 52, 0.45) 31%,
+            rgba(35, 102, 52, 0.45) 35%,
+            rgba(243, 0, 0, 0.25) 36%,
+            rgba(243, 0, 0, 0.25) 45%,
+            rgba(35, 102, 52, 0.45) 46%,
+            rgba(35, 102, 52, 0.45) 49%,
             transparent 50%,
             transparent
           ),
           radial-gradient(
             circle at 0 50%,
-            rgba(6, 78, 59, 0.4) 5%,
-            rgba(212, 175, 55, 0.4) 6%,
-            rgba(212, 175, 55, 0.4) 15%,
-            rgba(6, 78, 59, 0.4) 16%,
-            rgba(6, 78, 59, 0.4) 20%,
-            rgba(212, 175, 55, 0.4) 21%,
-            rgba(212, 175, 55, 0.4) 30%,
-            rgba(6, 78, 59, 0.4) 31%,
-            rgba(6, 78, 59, 0.4) 35%,
-            rgba(212, 175, 55, 0.4) 36%,
-            rgba(212, 175, 55, 0.4) 45%,
-            rgba(6, 78, 59, 0.4) 46%,
-            rgba(6, 78, 59, 0.4) 49%,
+            rgba(35, 102, 52, 0.45) 5%,
+            rgba(243, 0, 0, 0.25) 6%,
+            rgba(243, 0, 0, 0.25) 15%,
+            rgba(35, 102, 52, 0.45) 16%,
+            rgba(35, 102, 52, 0.45) 20%,
+            rgba(243, 0, 0, 0.25) 21%,
+            rgba(243, 0, 0, 0.25) 30%,
+            rgba(35, 102, 52, 0.45) 31%,
+            rgba(35, 102, 52, 0.45) 35%,
+            rgba(243, 0, 0, 0.25) 36%,
+            rgba(243, 0, 0, 0.25) 45%,
+            rgba(35, 102, 52, 0.45) 46%,
+            rgba(35, 102, 52, 0.45) 49%,
             transparent 50%,
             transparent
           );
+
         background-size: 100px 50px;
-        opacity: 1; /* Changed from 0.95 to 1 for clearer text, opacity is now handled in rgba colors */
+        opacity: 1;
       }
-      .hero::before {
+
+      /* .hero::before {
         content: "";
         position: absolute;
         top: 0;
@@ -214,9 +221,9 @@
           0,
           0,
           0.4
-        ); /* Dark overlay for better text contrast */
+        ); 
         z-index: 1;
-      }
+      } */
 
       /* --- HEADER --- */
       header {
@@ -248,13 +255,13 @@
         line-height: 1.1;
       }
 
-      .logo-dhaka {
-        font-size: 16px;
-        letter-spacing: 1px;
+      .logo-head {
+        font-size: 20px;
+        color: var(--primary-green);
       }
 
-      .logo-expo {
-        font-size: 22px;
+      .logo-title {
+        font-size: 15.7px;
         color: var(--gold);
       }
 
@@ -297,10 +304,99 @@
       /* --- HERO --- */
       .hero {
         position: relative;
-        color: var(--white);
-        padding: 140px 0 120px;
+        background-image: url("assets/image.png");
+        background-size: cover;
+        background-position: center;  
+        overflow: hidden;
+        color: #ffffff;
+        padding: 70px 0 120px;
         text-align: center;
+        z-index: 1;
       }
+
+      /* .hero::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+
+        animation: heroSlide 10s infinite;
+        z-index: -2;
+      } */
+
+      /* @keyframes heroSlide {
+        0% {
+          background-image: url("assets/Cover_01.png");
+          transform: translateX(0%);
+        }
+
+
+        50% {
+          background-image: url("assets/Cover_02.png");
+          transform: translateX(0%);
+        }
+
+        100% {
+          background-image: url("assets/Cover_01.png");
+          transform: translateX(0%);
+        }
+      } */
+
+      /* .hero::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(
+          to bottom,
+          rgba(0, 0, 0, 0.6),
+          rgba(35, 102, 52, 0.35)
+        );
+        z-index: -1;
+      } */
+
+
+      .hero-title {
+        font-size: 3.5rem;
+        margin-bottom: 20px;
+        color: var(--primary-green);
+        line-height: 1.2;
+
+        margin-bottom: 20px;
+      }
+
+      .hero-title .head {
+        color: var(--primary-green);
+        font-size: larger;
+
+        /* White border (modern browsers) */
+        /* -webkit-text-stroke: 1px green; */
+
+        /* Fallback for better visibility */
+        /* text-shadow:
+          1px 1px 0 green,
+        -1px 1px 0 green,
+          1px -1px 0 green,
+        -1px -1px 0 green,
+          0 6px 15px rgba(0, 0, 0, 0.6); */
+      }
+
+      .hero-title .tail {
+        color: var(--gold);
+
+        /* White border (modern browsers) */
+        /* -webkit-text-stroke: 1px red; */
+
+        /* Fallback for better visibility */
+        /* text-shadow:
+          1px 1px 0 red,
+        -1px 1px 0 red,
+          1px -1px 0 red,
+        -1px -1px 0 red,
+          0 6px 15px rgba(0, 0, 0, 0.6); */
+      }
+
 
       .hero-content {
         position: relative;
@@ -317,11 +413,12 @@
         font-size: 1.5rem;
         font-weight: 300;
         margin-bottom: 30px;
-        color: var(--gold);
+        color: var(--primary-green);
       }
 
       .hero-details {
         font-size: 1.1rem;
+        color: var(--gold);
         margin-bottom: 40px;
         opacity: 0.9;
         display: flex;
@@ -688,7 +785,7 @@
       <div class="container nav-wrapper">
         <div class="logo">
           <!-- Simple SVG Logo Placeholder -->
-          <svg
+          <!-- <svg
             width="40"
             height="40"
             viewBox="0 0 24 24"
@@ -699,10 +796,11 @@
             stroke-linejoin="round"
           >
             <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
-          </svg>
+          </svg> -->
+          <img src="./assets/logo.jpeg" alt="" width="40" height="40">
           <div class="logo-text">
-            <span class="logo-dhaka">DHAKA</span>
-            <span class="logo-expo">HALAL EXPO</span>
+            <span class="logo-head">Bangladesh Halal Expo</span>
+            <span class="logo-title">International Trade Exhibition</span>
           </div>
         </div>
         <div class="hamburger" id="hamburger">&#9776;</div>
@@ -711,7 +809,7 @@
           <li><a href="#about">About</a></li>
           <li><a href="#exhibitors">Exhibitors</a></li>
           <li><a href="#visitors">Visitors</a></li>
-          <li><a href="#b2b">B2B Program</a></li>
+          <li><a href="#b2b">B2B Programs</a></li>
           <li><a href="#why-dhaka">Why Dhaka?</a></li>
           <li><a href="#contact">Contact</a></li>
           <li class="lang-toggle" aria-label="Toggle Language">
@@ -748,7 +846,14 @@
     <!-- Hero Section -->
     <section id="home" class="hero pattern-overlay">
       <div class="container hero-content">
-        <h1>1st International<br />Dhaka Halal Expo 2026</h1>
+        <div style="border-radius: 50%;">
+          <img src="./assets/logo.jpeg" alt="" height="150" width="150" style="border-radius: 50% 50% 0% 0%;">
+        </div>
+        
+        <h1 class="hero-title">
+          <span class="head">Bangladesh Halal Expo</span>
+          <br /><span class="tail">International Trade Exhibition</span>
+        </h1>
         <h2>Meeting Point of the Global Halal Economy</h2>
 
         <div class="hero-details">
@@ -767,7 +872,7 @@
             <line x1="8" y1="2" x2="8" y2="6"></line>
             <line x1="3" y1="10" x2="21" y2="10"></line>
           </svg>
-          <span>May 28-30, 2026</span>
+          <span>May 07-09, 2026</span>
           <span style="margin: 0 10px">|</span>
           <svg
             width="20"
@@ -787,7 +892,7 @@
 
         <div class="hero-buttons">
           <a href="#exhibitors" class="btn btn-primary">Exhibit Now</a>
-          <a href="#visitors" class="btn btn-outline">Visit Us</a>
+          <a href="#visitors" class="btn btn-primary">Visit Us</a>
         </div>
       </div>
     </section>
@@ -817,9 +922,9 @@
     <!-- About Section -->
     <section id="about" class="section-padding">
       <div class="container">
-        <h2 class="section-title">About Halal Expo</h2>
-        <p class="section-subtitle">
-          Make Bangladesh a central country in the $10 trillion halal market
+        <h2 class="section-title">About Bangladesh Halal Expo</h2>
+        <p class="section-subtitle" style="color: var(--gold);">
+          To make Bangladesh one of the largest halal markets in the world
         </p>
 
         <div class="about-grid">
@@ -828,7 +933,7 @@
               Connecting Continents Through Halal Trade
             </h3>
             <p style="margin-bottom: 20px">
-              The 1st International Dhaka Halal Expo 2026 is organized under the
+              The 1st Bangladesh Halal Expo 2026 is organized under the
               auspices of the Presidency of Bangladesh, in collaboration with
               SMIIC and ICDT. It stands as the largest international trade fair
               for the halal economy in the region.
@@ -918,7 +1023,7 @@
     >
       <div class="container">
         <h2 class="section-title">Exhibition Sectors</h2>
-        <p class="section-subtitle">
+        <p class="section-subtitle" style="color: var(--gold);">
           Explore a wide range of industries showcasing the best in Halal
           products and services.
         </p>
@@ -935,6 +1040,19 @@
               Processing, Packaging & HORECA
             </p>
           </div>
+          <!-- Consumer product -->
+          <div class="area-card">
+            <svg class="area-icon" viewBox="0 0 24 24">
+              <path
+                d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-13h2v6h-2zm0 8h2v2h-2z"
+              />
+            </svg>
+            <h4>Consumer Products</h4>
+            <p style="font-size: 0.9rem; color: #666">
+              Homecare, Cleaning & FMCG
+            </p>
+          </div>  
+
           <!-- Cosmetic -->
           <div class="area-card">
             <svg class="area-icon" viewBox="0 0 24 24">
@@ -966,7 +1084,7 @@
                 d="M16 2.05c-.32-.22-.72-.36-1.15-.41-.42-.05-.85.03-1.22.22l-1.63.82-1.63-.82c-.37-.19-.8-.27-1.22-.22-.43.05-.83.19-1.15.41l-6 4c-.58.38-.85 1.1-.64 1.76l2.06 6.18c.21.63.81 1.05 1.47 1.05h12.23c.66 0 1.26-.42 1.47-1.05l2.06-6.18c.21-.66-.06-1.38-.64-1.76l-6-4z"
               />
             </svg>
-            <h4>Modest Fashion</h4>
+            <h4>Textiles & Fashion</h4>
             <p style="font-size: 0.9rem; color: #666">
               Textiles & Traditional Clothing
             </p>
@@ -976,19 +1094,43 @@
             <svg class="area-icon" viewBox="0 0 24 24">
               <path d="M4 10h16v10H4zM2 6h20v2H2zM10 2h4v2h-4z" />
             </svg>
-            <h4>Finance & Tourism</h4>
+            <h4>Banking & Finance</h4>
             <p style="font-size: 0.9rem; color: #666">
               Islamic Banking, Family Tourism
             </p>
           </div>
+
+          <!-- Turism & Hospitality -->
+          <div class="area-card">
+            <svg class="area-icon" viewBox="0 0 24 24">
+              <path
+                d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"
+              />
+            </svg>
+            <h4>Tourism & Hospitality</h4>
+            <p style="font-size: 0.9rem; color: #666">
+              Family Tourism, Travel & Leisure
+            </p>
+          </div>
+
           <!-- Certification -->
           <div class="area-card">
             <svg class="area-icon" viewBox="0 0 24 24">
               <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
             </svg>
             <h4>Certification Bodies</h4>
-            <p style="font-size: 0.9rem; color: #666">NGOs & Public Sector</p>
+            <p style="font-size: 0.9rem; color: #666">BSTI & Islamic Foundation</p>
           </div>
+
+          <!-- Regulatory Authorities -->
+          <div class="area-card">
+            <svg class="area-icon" viewBox="0 0 24 24">
+              <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+            </svg>
+            <h4>Regulatory Authorities</h4>
+            <p style="font-size: 0.9rem; color: #666">Government Bodies & Compliance</p>
+          </div>
+
         </div>
       </div>
     </section>
@@ -1253,13 +1395,13 @@
           <div class="footer-col">
             <h4>Contact Us</h4>
             <p>
-              <strong>Address:</strong><br />China Bangladesh Friendship Expo
-              Center,<br />Dhaka, Bangladesh
+              <strong>Office Address:</strong><br />24 Arambug, Gazi Pitha Goli<br />
+              Motijheel, Dhaka - 1000
             </p>
             <p style="margin-top: 10px">
-              <strong>Phone:</strong> +880 123 456 7890
+              <strong>Phone:</strong> +88 01635 438380
             </p>
-            <p><strong>Email:</strong> info@halalexpo2026.com</p>
+            <p><strong>Email:</strong> halalexpobd@gmail.com</p>
           </div>
           <div class="footer-col">
             <h4>Quick Links</h4>
@@ -1273,11 +1415,13 @@
           </div>
           <div class="footer-col">
             <h4>Venue Location</h4>
-            <div class="map-placeholder">Google Map Placeholder</div>
+            <div class="map-placeholder">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d233682.3843736092!2d90.29879492812499!3d23.772783146349315!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755cbe596250e47%3A0x58a8625590d383d9!2sBangladesh-China%20Friendship%20Exhibition%20Center!5e0!3m2!1sen!2sbd!4v1767428236325!5m2!1sen!2sbd" width="100%" height="220" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
           </div>
         </div>
         <div class="copyright">
-          &copy; 2026 1st International Dhaka Halal Expo. All rights reserved.
+          &copy; 2026 United Muslim Ummah. All rights reserved.
         </div>
       </div>
     </footer>
