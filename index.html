@@ -24,7 +24,7 @@
           --bg-light: #f9fafb;
 
           --font-main: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-          --card-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+          --card-shadow: 10px 10px 30px rgba(0, 0, 0, 0.08);
         }
 
       * {
@@ -91,6 +91,15 @@
         transition: all 0.3s ease;
         cursor: pointer;
         border: 2px solid transparent;
+      }
+
+      .btn-register {
+        background-color: var(--primary-green);
+        color: var(--white);
+      }
+      .btn-register:hover {
+        background-color: #b20000;
+        color: var(--white);
       }
 
       .btn-primary {
@@ -304,12 +313,14 @@
       /* --- HERO --- */
       .hero {
         position: relative;
-        background-image: url("assets/image.png");
+        background-image: url("assets/Cover_1.jpg");
+        
+        background-color: var(--white);
         background-size: cover;
         background-position: center;  
         overflow: hidden;
         color: #ffffff;
-        padding: 70px 0 120px;
+        padding: 100px 0 120px;
         text-align: center;
         z-index: 1;
       }
@@ -404,7 +415,7 @@
       }
 
       .hero-content h1 {
-        font-size: 3.5rem;
+        font-size: 3rem;
         margin-bottom: 20px;
         line-height: 1.2;
       }
@@ -738,7 +749,13 @@
           grid-template-columns: 1fr 1fr;
         }
         .hero-content h1 {
-          font-size: 2.5rem;
+          font-size: 1.5rem;
+        }
+        .hero-content h2 {
+          font-size: 1.1rem;
+        }
+        .hero-details {
+          font-size: 0.9rem;
         }
         .nav-links {
           gap: 15px;
@@ -813,7 +830,7 @@
           <li><a href="#why-dhaka">Why Dhaka?</a></li>
           <li><a href="#contact">Contact</a></li>
           <li class="lang-toggle" aria-label="Toggle Language">
-            <svg
+            <!-- <svg
               xmlns="http://www.w3.org/2000/svg"
               width="20"
               height="20"
@@ -829,13 +846,13 @@
               <path
                 d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"
               ></path>
-            </svg>
+            </svg> -->
           </li>
           <li>
             <a
               href="#"
-              class="btn btn-primary"
-              style="padding: 8px 20px; font-size: 14px"
+              class="btn btn-register"
+              style="padding: 8px 20px; font-size: 14px; font-weight: 600; color: #fff;"
               >Register Now</a
             >
           </li>
@@ -844,11 +861,11 @@
     </header>
 
     <!-- Hero Section -->
-    <section id="home" class="hero pattern-overlay">
+    <section id="home" class="hero">
       <div class="container hero-content">
-        <div style="border-radius: 50%;">
+        <!-- <div style="border-radius: 50%;">
           <img src="./assets/logo.jpeg" alt="" height="150" width="150" style="border-radius: 50% 50% 0% 0%;">
-        </div>
+        </div> -->
         
         <h1 class="hero-title">
           <span class="head">Bangladesh Halal Expo</span>
@@ -923,27 +940,23 @@
     <section id="about" class="section-padding">
       <div class="container">
         <h2 class="section-title">About Bangladesh Halal Expo</h2>
-        <p class="section-subtitle" style="color: var(--gold);">
-          To make Bangladesh one of the largest halal markets in the world
+        <p class="section-subtitle">
+          To make Bangladesh one of the leading halal economies in the world
         </p>
 
         <div class="about-grid">
           <div class="card about-text-card">
             <h3 style="margin-bottom: 20px; font-size: 1.8rem">
-              Connecting Continents Through Halal Trade
+             Connecting Continents Through the Global Halal Economy
             </h3>
             <p style="margin-bottom: 20px">
-              The 1st Bangladesh Halal Expo 2026 is organized under the
-              auspices of the Presidency of Bangladesh, in collaboration with
-              SMIIC and ICDT. It stands as the largest international trade fair
-              for the halal economy in the region.
+              Bangladesh Halal Expo 2026 stands as a trusted meeting point of the global halal economy, bringing together international exhibitors, buyers, innovators, and policymakers on one prestigious platform. Guided by the principles of halal, ethical trade, and sustainability, the Expo reflects a shared vision of inclusive growth and responsible commerce.
+            </p>
+            <p style="margin-bottom: 20px">
+              Held at the China–Bangladesh Friendship Expo Center, Dhaka from May 7–9, 2026, the event highlights Bangladesh’s growing role as an emerging hub in the multi-billion-dollar halal market. By connecting Bangladeshi production strength with a global halal consumer base of over two billion people, the Expo fosters meaningful partnerships across food, pharmaceuticals, cosmetics, textiles, tourism, and finance.
             </p>
             <p>
-              With featured areas focusing on
-              <strong>NOV (Natural, Organic, Vegan)</strong>, Private Label, and
-              <strong>SEFPEX (Aquaculture)</strong>, we provide a unified
-              platform for industry leaders to showcase innovation and
-              tradition.
+              Beyond trade, Bangladesh Halal Expo 2026 celebrates innovation and lifestyle through dedicated thematic zones such as NOV (Natural, Organic & Vegan), Private Label Products, and SEFPEX (Aquaculture & Equipment)—creating a unified platform where tradition meets modern global demand.
             </p>
           </div>
           <div class="card about-highlights-card">
@@ -968,7 +981,7 @@
                   "
                   >✓</span
                 >
-                <strong>15,000+ sqm</strong> Exhibition Area
+                15,000+ sqm International Exhibition Area
               </li>
               <li
                 style="margin-bottom: 15px; display: flex; align-items: center"
@@ -981,7 +994,7 @@
                   "
                   >✓</span
                 >
-                <strong>40+</strong> Exhibitor Countries
+                Participation from 40+ Countries
               </li>
               <li
                 style="margin-bottom: 15px; display: flex; align-items: center"
@@ -994,7 +1007,7 @@
                   "
                   >✓</span
                 >
-                <strong>700+</strong> Hosted Buyers
+               700+ Hosted International Buyers
               </li>
               <li
                 style="margin-bottom: 15px; display: flex; align-items: center"
@@ -1007,7 +1020,33 @@
                   "
                   >✓</span
                 >
-                Organized with <strong>OIC Institutions</strong>
+                Organized in collaboration with OIC-affiliated Institutions
+              </li>
+              <li
+                style="margin-bottom: 15px; display: flex; align-items: center"
+              >
+                <span
+                  style="
+                    color: var(--gold);
+                    margin-right: 10px;
+                    font-size: 1.2rem;
+                  "
+                  >✓</span
+                >
+                Specialized Zones: NOV, Private Label & SEFPEX
+              </li>
+              <li
+                style="margin-bottom: 15px; display: flex; align-items: center"
+              >
+                <span
+                  style="
+                    color: var(--gold);
+                    margin-right: 10px;
+                    font-size: 1.2rem;
+                  "
+                  >✓</span
+                >
+                Platform for Global B2B Meetings & Halal Trade Forums
               </li>
             </ul>
           </div>

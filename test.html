@@ -1,0 +1,150 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Bangladesh Halal Expo 2026 – Premium Background</title>
+
+<style>
+:root{
+  --deep-green:#0b3d2e;
+  --deep-green-2:#06291f;
+  --soft-red:#8b1e2d;
+  --gold:#d4af37;
+  --white:#ffffff;
+}
+
+*{margin:0;padding:0;box-sizing:border-box;}
+
+body{
+  font-family: "Poppins", system-ui, sans-serif;
+  background: linear-gradient(135deg,var(--deep-green),var(--deep-green-2));
+  color: var(--white);
+  min-height:100vh;
+  overflow:hidden;
+}
+
+/* --- Animated Gradient Layer --- */
+.bg-animated{
+  position:fixed;
+  inset:0;
+  background:
+    radial-gradient(circle at 20% 30%, rgba(139,30,45,0.18), transparent 40%),
+    radial-gradient(circle at 80% 70%, rgba(212,175,55,0.15), transparent 45%),
+    linear-gradient(120deg, rgba(11,61,46,0.9), rgba(6,41,31,0.95));
+  animation: moveBg 30s ease-in-out infinite alternate;
+  z-index:-3;
+}
+
+@keyframes moveBg{
+  from{background-position:0% 0%;}
+  to{background-position:100% 100%;}
+}
+
+/* --- Islamic Geometry Grid --- */
+.pattern{
+  position:fixed;
+  inset:0;
+  background-image:
+    repeating-linear-gradient(
+      45deg,
+      rgba(212,175,55,0.05) 0,
+      rgba(212,175,55,0.05) 1px,
+      transparent 1px,
+      transparent 24px
+    ),
+    repeating-linear-gradient(
+      -45deg,
+      rgba(139,30,45,0.05) 0,
+      rgba(139,30,45,0.05) 1px,
+      transparent 1px,
+      transparent 24px
+    );
+  animation: slowDrift 60s linear infinite;
+  z-index:-2;
+}
+
+@keyframes slowDrift{
+  from{background-position:0 0, 0 0;}
+  to{background-position:300px 300px, -300px 300px;}
+}
+
+/* --- Soft Dark Overlay for Text Clarity --- */
+.overlay{
+  position:fixed;
+  inset:0;
+  background:linear-gradient(
+    to bottom,
+    rgba(0,0,0,0.45),
+    rgba(0,0,0,0.65)
+  );
+  z-index:-1;
+}
+
+/* --- HERO CONTENT --- */
+.hero{
+  position:relative;
+  min-height:100vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  padding:40px 20px;
+}
+
+.hero h1{
+  font-size:clamp(2.2rem,4vw,3.5rem);
+  font-weight:800;
+  line-height:1.2;
+  color:var(--deep-green);
+  -webkit-text-stroke:2px var(--white);
+  text-shadow:
+    0 6px 25px rgba(0,0,0,0.45);
+  background:linear-gradient(90deg,var(--deep-green),var(--soft-red));
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+}
+
+.hero h2{
+  margin-top:20px;
+  font-size:1.3rem;
+  font-weight:400;
+  color:var(--gold);
+  letter-spacing:0.5px;
+}
+
+.hero .meta{
+  margin-top:25px;
+  font-size:1rem;
+  opacity:0.95;
+}
+
+.hero .meta span{
+  display:inline-block;
+  margin:0 10px;
+}
+
+@media(max-width:768px){
+  .hero h1{-webkit-text-stroke:1.2px var(--white);}
+}
+</style>
+</head>
+
+<body>
+  <div class="bg-animated"></div>
+  <div class="pattern"></div>
+  <div class="overlay"></div>
+
+  <section class="hero">
+    <div>
+      <h1>Bangladesh Halal Expo<br/>International Trade Exhibition – 2026</h1>
+      <h2>Meeting Point of the Global Halal Economy</h2>
+      <div class="meta">
+        <span>📅 May 07–09, 2026</span>
+        <span>📍 China–Bangladesh Friendship Expo Center, Dhaka</span>
+      </div>
+    </div>
+  </section>
+</body>
+</html>

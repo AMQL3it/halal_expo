@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Bangladesh Halal Expo 2026 – Islamic Premium Background</title>
+
+<style>
+:root {
+  --green: #0b4f3f;
+  --red: #c62828;
+  --gold: #d4af37;
+  --light-bg: #f8fdfb;
+  --dark-bg: #071f1a;
+}
+
+/* ===== AUTO DARK–LIGHT ===== */
+body {
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+  background:
+    radial-gradient(circle at top left, rgba(11,79,63,0.12), transparent 40%),
+    radial-gradient(circle at bottom right, rgba(198,40,40,0.10), transparent 45%),
+    var(--light-bg);
+  color: #0f172a;
+  min-height: 100vh;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background:
+      radial-gradient(circle at top left, rgba(212,175,55,0.12), transparent 45%),
+      radial-gradient(circle at bottom right, rgba(11,79,63,0.35), transparent 50%),
+      linear-gradient(180deg, #031712, var(--dark-bg));
+    color: #e5e7eb;
+  }
+}
+
+/* ===== ISLAMIC ANIMATED LAYER ===== */
+.islamic-bg {
+  background:
+    repeating-radial-gradient(
+      circle at 50% 50%,
+      rgba(212,175,55,0.08) 0,
+      rgba(212,175,55,0.08) 2px,
+      transparent 2px,
+      transparent 40px
+    ),
+    linear-gradient(120deg, #063a2f, #0b4f3f);
+  animation: bgMove 40s linear infinite;
+}
+
+@keyframes bgMove {
+  from { background-position: 0 0; }
+  to { background-position: 400px 400px; }
+}
+
+/* ===== MOBILE OPTIMIZED ===== */
+@media (max-width: 767px) {
+  body {
+    background: linear-gradient(180deg, #063a2f, #071f1a);
+  }
+}
+
+/* ===== HERO CONTENT ===== */
+.hero {
+  position: relative;
+  padding: 140px 20px;
+  text-align: center;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(0,0,0,0.45),
+    rgba(0,0,0,0.65)
+  );
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 900px;
+  margin: auto;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  color: var(--green);
+  -webkit-text-stroke: 1.5px white;
+  text-shadow: 0 8px 30px rgba(0,0,0,0.6);
+}
+
+.hero h2 {
+  font-weight: 300;
+  color: var(--gold);
+  margin-top: 15px;
+}
+
+.hero p {
+  margin-top: 25px;
+  opacity: 0.9;
+}
+</style>
+</head>
+
+<body class="islamic-bg">
+
+<section class="hero">
+  <div class="hero-content">
+    <h1>Bangladesh Halal Expo 2026</h1>
+    <h2>Meeting Point of the Global Halal Economy</h2>
+    <p>
+      Dhaka, China–Bangladesh Friendship Expo Center<br/>
+      7–9 May 2026
+    </p>
+  </div>
+</section>
+
+</body>
+</html>
